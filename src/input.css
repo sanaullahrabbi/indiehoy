@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+} 
+header {
+    background: linear-gradient(180deg, #e4acff 0%, #d4feef 100%);
+}
+
+section.what-will-get {
+    background: linear-gradient(359.4deg, #fff8bb 3.16%, #d4feef 100%);
+}
+
+section.what-will-find {
+    background: linear-gradient(180.03deg, #ffa95a 0.02%, rgba(252, 255, 105, 0) 128.82%);
+}
+
+section.what-are-waiting {
+    background: #ffcee9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.your-career-artist {
+    background: linear-gradient(180deg, rgba(62, 232, 35, 0.1) 1%, rgba(255, 167, 199, 0) 35.63%),
+        url("../images/Sin título-2 1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
+@media screen(md) {
+    section.your-career-artist {
+        background: linear-gradient(180deg, rgba(62, 232, 35, 0.1) 1%, rgba(255, 167, 199, 0) 35.63%),url("../images/Sin título-2 1_desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+  }
+
+input {
+    @apply w-full rounded-2xl border-0 px-7 py-3.5 text-xs outline-0 italic;
+}
+
+input::-webkit-input-placeholder {
+    text-decoration: underline;
+}
+input::-moz-placeholder {
+    text-decoration: underline;
+}
+input:-ms-input-placeholder {
+    text-decoration: underline;
+}
